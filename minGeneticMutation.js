@@ -131,6 +131,7 @@ var minMutation3 = function (startGene, endGene, bank) {
 	return res;
 };
 
+// ( O(n * m * 4) ) — n = length of bank, m = gene length (fixed at 8), 4 possible mutations per position.
 var minMutation4 = function (startGene, endGene, bank) {
 	// create set from bank
 	const geneSet = new Set(bank);
